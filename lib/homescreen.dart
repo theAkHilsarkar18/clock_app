@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
           leading: const Icon(Icons.menu_open_rounded),
           title: const Text("Clock App"),
         ),
-        body: Column(
+        body: const Column(
           children: [
             TimeInText(),
             AnalogTimeClock(),

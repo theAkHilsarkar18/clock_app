@@ -16,8 +16,8 @@ class _AnalogTimeClockState extends State<AnalogTimeClock> {
     return Container(
       height: height*0.35,
       width: width,
-      margin: EdgeInsets.all(10),
-      decoration: BoxDecoration(
+      margin: const EdgeInsets.all(10),
+      decoration: const BoxDecoration(
         color: Color(0xffCBF1F5),
         shape: BoxShape.circle,
         boxShadow: [

@@ -16,7 +16,7 @@ class ClockApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }

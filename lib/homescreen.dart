@@ -17,6 +17,7 @@ class HomeScreen extends StatelessWidget {
           title: const Text("Clock App"),
         ),
         body: const Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             TimeInText(),
             AnalogTimeClock(),

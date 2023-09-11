@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'clock_painter.dart';
+
 class AnalogTimeClock extends StatefulWidget {
   const AnalogTimeClock({super.key});
 
@@ -24,7 +26,9 @@ class _AnalogTimeClockState extends State<AnalogTimeClock> {
           BoxShadow(color: Color(0xffE3FDFD),offset: Offset(0,0),blurRadius: 64)
         ]
       ),
-      //child: ClockPainter(),
+      child: CustomPaint(
+        painter: ClockPainter(),
+      )
     );
   }
 }

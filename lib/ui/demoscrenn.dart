@@ -76,14 +76,14 @@ class ClockPainter extends CustomPainter
 
     // minute line
     var minuteX = centerX + size.width * 0.30 * cos((dateTime.minute * 6) * pi / 180 );
-    var minuteY = centerX + size.height * 0.30 * sin((dateTime.minute * 6) * pi / 180 );
+    var minuteY = centerY + size.height * 0.30 * sin((dateTime.minute * 6) * pi / 180 );
 
     Paint minuteLine = Paint()..color = Colors.deepPurple..strokeWidth = 7..strokeCap = StrokeCap.round;
     canvas.drawLine(center, Offset(minuteX, minuteY), minuteLine);
 
     // second line
     var secondX = centerX + size.width * 0.38 * cos((dateTime.second * 6) * pi / 180);
-    var secondY = centerX + size.width * 0.38 * sin((dateTime.second * 6) * pi / 180);
+    var secondY = centerY + size.width * 0.38 * sin((dateTime.second * 6) * pi / 180);
 
     Paint secondLine = Paint()..color = Colors.deepPurpleAccent..strokeWidth = 5..strokeCap = StrokeCap.round;
     canvas.drawLine(center, Offset(secondX,secondY), secondLine);

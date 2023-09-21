@@ -1,6 +1,7 @@
 import 'package:clock_app/homescreen.dart';
 import 'package:clock_app/transform_widget.dart';
 import 'package:clock_app/ui/demoscrenn.dart';
+import 'package:clock_app/ui/dividerclock.dart';
 import 'package:flutter/material.dart';
 
 void main()
@@ -18,7 +19,7 @@ class ClockApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: const DemoScreen(),
+      home: const DividerClockScreen(),
       // home: const HomeScreen(),
     );
   }

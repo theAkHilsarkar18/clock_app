@@ -69,7 +69,7 @@ class ClockPainter extends CustomPainter
     canvas.drawCircle(center, 140, mainCircle);
 
     // hour line
-    var hourX = centerX + size.width * 0.20 * cos((dateTime.hour * 0.5) * pi / 180);
+    var hourX = centerX + size.width * 0.20 * cos((dateTime.hour * 30 + dateTime.minute * 0.5) * pi / 180);
     var hourY = centerY + size.height * 0.20 * sin((dateTime.hour * 0.5) * pi / 180);
     Paint hourLine = Paint()..color = Colors.blueAccent..strokeWidth = 15..strokeCap = StrokeCap.round;
     canvas.drawLine(center, Offset(hourX, hourY), hourLine);
